@@ -1,0 +1,153 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-07-24 20:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/user/common_search.py:26
+msgid "I can't get the data"
+msgstr ""
+
+#: handlers/user/playlists.py:12
+msgid "Your playlists:"
+msgstr ""
+
+#: handlers/user/playlists.py:21
+msgid "Playlist <b>{playlist_name}</b> is empty"
+msgstr ""
+
+#: handlers/user/playlists.py:25
+msgid "Playlist {playlist_name} songs:"
+msgstr ""
+
+#: handlers/user/playlists.py:39
+msgid "Song {name} added to playlist {playlist_name}"
+msgstr ""
+
+#: handlers/user/playlists.py:45
+msgid "Song {name} removed from playlist {playlist_name}"
+msgstr ""
+
+#: handlers/user/search.py:16 handlers/user/search_album.py:24
+#: handlers/user/search_album.py:46 handlers/user/search_artist.py:23
+#: handlers/user/search_artist.py:41
+msgid "Nothing found ☹"
+msgstr ""
+
+#: handlers/user/search.py:23
+msgid "Result (<i>{text}</i>) :"
+msgstr ""
+
+#: handlers/user/search_album.py:14
+msgid "Enter album name"
+msgstr ""
+
+#: handlers/user/search_album.py:30
+msgid "Albums {title}:"
+msgstr ""
+
+#: handlers/user/search_album.py:52
+msgid "Tracks count: {tracks_count}"
+msgstr ""
+
+#: handlers/user/search_album.py:53
+msgid "Year: {year}"
+msgstr ""
+
+#: handlers/user/search_artist.py:13
+msgid "Enter artist name"
+msgstr ""
+
+#: handlers/user/search_artist.py:28
+msgid "Artists by name <b>{artist_name}</b>:"
+msgstr ""
+
+#: handlers/user/search_artist.py:46
+msgid "Nickname: <b>{artist_name}</b>"
+msgstr ""
+
+#: handlers/user/search_artist.py:47
+msgid "Subscribers on youtube: <b>{artist_subscribers}</b>"
+msgstr ""
+
+#: handlers/user/send_song.py:39
+msgid "I can't download this song {song_title}"
+msgstr ""
+
+#: handlers/user/send_song.py:67
+msgid "I can't download this song {song_name}"
+msgstr ""
+
+#: handlers/user/start.py:17
+msgid "Hi, {user_name}!"
+msgstr ""
+
+#: handlers/user/start.py:18
+msgid "Just send me name of the song and i will find music for you."
+msgstr ""
+
+#: handlers/user/start.py:20
+msgid "▫ /playlists - to see your playlists"
+msgstr ""
+
+#: handlers/user/start.py:21
+msgid "▫ /artist - to find most popular songs from received artist"
+msgstr ""
+
+#: handlers/user/start.py:22
+msgid "▫ /album - to find album"
+msgstr ""
+
+#: handlers/user/start.py:23
+msgid "▫ /set_language - to set language"
+msgstr ""
+
+#: handlers/user/start.py:24
+msgid "▫ /cancel - to cancel search or to stop queue"
+msgstr ""
+
+#: handlers/user/start.py:26
+msgid "📱 Contact me - {admin}"
+msgstr ""
+
+#: misc/bot_commands.py:6
+msgid "Help from bot"
+msgstr ""
+
+#: misc/bot_commands.py:7
+msgid "Get all playlists"
+msgstr ""
+
+#: misc/bot_commands.py:8
+msgid "Find album"
+msgstr ""
+
+#: misc/bot_commands.py:9
+msgid "Find artist"
+msgstr ""
+
+#: misc/bot_commands.py:10
+msgid "Clear queue"
+msgstr ""
+
+#: misc/bot_commands.py:21
+msgid "Start mailing"
+msgstr ""
+
+#: misc/bot_commands.py:22
+msgid "Get users count"
+msgstr ""
+
