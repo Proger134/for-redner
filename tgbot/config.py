@@ -73,7 +73,7 @@ db_url = load_config().db_url
 # POSTGRES_URI = f"postgresql://{db.user}:{db.password}@{db.host}/{db.database}"
 POSTGRES_URI = db_url
 # POSTGRES_URI = os.environ["DATABASE_URL"]
-
+# hello
 I18N_DOMAIN = "music_bot"
 BASE_DIR = Path(__file__).parent
 LOCALES_DIR = BASE_DIR / "locales"
