@@ -37,38 +37,37 @@ def load_config(path: str = None):
     env = Env()
     env.read_env(path)
 
-    return Config(
-        tg_bot=TgBot(
-            token=env.str("BOT_TOKEN"),
-            admin_ids=list(map(int, env.list("ADMINS"))),
-            use_redis=env.bool("USE_REDIS"),
-        ),
-        db=DbConfig(
-            host=env.str('DB_HOST'),
-            password=env.str('DB_PASS'),
-            user=env.str('DB_USER'),
-            database=env.str('DB_NAME')
-        ),
-        db_url=env.str('DATABASE_URL'),
-        misc=Miscellaneous()
-    )
-
     # return Config(
     #     tg_bot=TgBot(
-    #
-    #         token=env.str('BOT_TOKEN'),
-    #         admin_ids=[1348660557],
-    #         use_redis=False,
+    #         token=env.str("BOT_TOKEN"),
+    #         admin_ids=list(map(int, env.list("ADMINS"))),
+    #         use_redis=env.bool("USE_REDIS"),
     #     ),
     #     db=DbConfig(
     #         host=env.str('DB_HOST'),
     #         password=env.str('DB_PASS'),
     #         user=env.str('DB_USER'),
-    #         database=env.str('DB_NAME'),
+    #         database=env.str('DB_NAME')
     #     ),
-    #
+    #     db_url=env.str('DATABASE_URL'),
     #     misc=Miscellaneous()
     # )
+
+    return Config(
+        tg_bot=TgBot(
+            token=os.getenv('BOT_TOKEN'),
+            admin_ids=[1348660557],
+            use_redis=False,
+        ),
+        db=DbConfig(
+            host="",
+            password="",
+            user="",
+            database="",
+        ),
+        db_url=os.getenv('DATABASE_URL'),
+        misc=Miscellaneous()
+    )
 
 
 db_url = load_config().db_url
