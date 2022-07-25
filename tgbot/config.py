@@ -58,10 +58,10 @@ def load_config(path: str = None):
             use_redis=False,
         ),
         db=DbConfig(
-            host="127.0.0.1",
-            password="",
-            user="",
-            database=""
+            host=env.str('DB_HOST'),
+            password=env.str('DB_PASS'),
+            user=env.str('DB_USER'),
+            database=env.str('DB_NAME')
         ),
         misc=Miscellaneous()
     )
@@ -69,7 +69,8 @@ def load_config(path: str = None):
 
 # db = load_config().db
 # POSTGRES_URI = f"postgresql://{db.user}:{db.password}@{db.host}/{db.database}"
-POSTGRES_URI = os.environ["DATABASE_URL"]
+POSTGRES_URI = os.environ["DB_DATA"]
+# POSTGRES_URI = os.environ["DATABASE_URL"]
 
 I18N_DOMAIN = "music_bot"
 BASE_DIR = Path(__file__).parent

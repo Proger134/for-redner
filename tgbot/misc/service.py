@@ -61,6 +61,7 @@ def download_song(video_url, title):
 
         destination = r'tgbot/data/songs/'
         out_file = video.download(output_path=destination)
+        print(out_file)
         base, ext = os.path.splitext(out_file)
         new_path = "\\".join(base.split("/")[0:-1])
         new_file = new_path + f"\\{title}" + '.mp4'
