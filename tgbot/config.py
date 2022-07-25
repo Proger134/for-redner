@@ -29,6 +29,7 @@ class Miscellaneous:
 class Config:
     tg_bot: TgBot
     db: DbConfig
+    db_url: str
     misc: Miscellaneous
 
 
@@ -61,15 +62,16 @@ def load_config(path: str = None):
             host=env.str('DB_HOST'),
             password=env.str('DB_PASS'),
             user=env.str('DB_USER'),
-            database=env.str('DB_NAME')
+            database=env.str('DB_NAME'),
         ),
+        db_url=env.str('DATABASE_URL'),
         misc=Miscellaneous()
     )
 
 
-# db = load_config().db
+db_url = load_config().db_url
 # POSTGRES_URI = f"postgresql://{db.user}:{db.password}@{db.host}/{db.database}"
-POSTGRES_URI = os.environ["DB_DATA"]
+POSTGRES_URI = db_url
 # POSTGRES_URI = os.environ["DATABASE_URL"]
 
 I18N_DOMAIN = "music_bot"
